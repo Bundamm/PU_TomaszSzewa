@@ -1,0 +1,127 @@
+\documentclass[12pt, letterpaper, titlepage]{article}
+\usepackage[left=3.5cm, right=2.5cm, top=2.5cm, bottom=2.5cm]{geometry}
+\usepackage[MeX]{polski}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage{enumerate}
+\usepackage{amsmath} 
+\usepackage{amssymb}
+\usepackage{caption} 
+\captionsetup[table]{labelformat=empty}
+\title{Tabele}
+\author{Tomasz Szewa}
+\date{Październik 2022}
+\begin{document}
+\maketitle
+
+\section{PIERWSZA TABELA}
+\begin{table}[h]
+\centering\caption{Tabela 1: Przykładowy system decyzyjny(U, A, d), modelujący problem diagnozy medycznej, której efektem jest decyzja o wykonaniu lub nie wykonaniu operacji wycięcia wyrostka robaczkowego,
+U = \textit{{\{$u_1,u_2,...,u_{10}$}\}}, A = \textit{{\{$a_1,a_2$}\}}, d $\in$ D=\textit{{\{TAK,NIE}\}} \newline}
+\begin{tabular}{c | c c c}
+	\hline
+	\hline
+	Pacjent & Ból brzucha & Temperatura & Operacja\\
+	\hline
+	u1 & Mocny & Wysoka & Tak\\	
+	
+	u2 & Średni & Wysoka & Tak\\
+	
+	u3 & Mocny & Średnia & Tak\\
+	
+	u4 & Mocny & Niska & Tak\\
+	
+	u5 & Średni & Średnia & Tak\\
+	
+	u6 & Średni & Średnia & Nie\\
+	
+	u7 & Mały & Wysoka & Nie\\
+
+	u8 & Mały & Niska & Tak\\
+	
+	u9 & Mocny & Niska & Tak\\
+	
+	u10 & Mały & Średnia & Tak\\
+	\hline
+	\hline
+
+\end{tabular}
+\end{table}
+\section{BRAMKI LOGICZNE}
+\begin{table}[h]
+\centering\caption{NOT}
+\begin{tabular}{| c | c |}
+	\hline
+	A & Q\\
+	\hline
+	0 & 1\\
+	1 & 0\\
+	\hline
+\end{tabular}
+\end{table}
+\begin{table}[h]
+\centering\caption{AND}
+\begin{tabular}{| c c | c |}
+	\hline
+	A & B & Q\\
+	\hline
+	0 & 0 & 0\\
+	0 & 1 & 0\\
+	1 & 0 & 0\\
+	1 & 1 & 1\\
+	\hline
+\end{tabular}
+\end{table}
+\begin{table}[h]
+\centering\caption{NAND}
+\begin{tabular}{| c c | c |}
+	\hline
+	A & B & Q\\
+	\hline
+	0 & 0 & 1\\
+	0 & 1 & 1\\
+	1 & 0 & 1\\
+	1 & 1 & 0\\
+	\hline
+\end{tabular}
+\end{table}
+\begin{table}[h]
+\centering\caption{OR}
+\begin{tabular}{| c c | c |}
+	\hline
+	A & B & Q\\
+	\hline
+	0 & 0 & 0\\
+	0 & 1 & 1\\
+	1 & 0 & 1\\
+	1 & 1 & 0\\
+	\hline
+\end{tabular}
+\end{table}
+\begin{table}[h]
+\centering\caption{NOR}
+\begin{tabular}{| c c | c |}
+	\hline
+	A & B & Q\\
+	\hline
+	0 & 0 & 1\\
+	0 & 1 & 0\\
+	1 & 0 & 0\\
+	1 & 1 & 0\\
+	\hline
+\end{tabular}
+\end{table}
+\begin{table}[h]
+\centering\caption{XOR}
+\begin{tabular}{| c c | c |}
+	\hline
+	A & B & Q\\
+	\hline
+	0 & 0 & 0\\
+	0 & 1 & 1\\
+	1 & 0 & 1\\
+	1 & 1 & 0\\
+	\hline
+\end{tabular}
+\end{table}
+\end{document}
