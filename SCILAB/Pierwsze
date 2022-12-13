@@ -1,0 +1,568 @@
+ ans  =
+
+   1.
+
+--> cd ..
+ ans  =
+
+  "D:\Tomasz_Szewa\PU_TomaszSzewa"
+
+--> cd SCILAB
+ ans  =
+
+  "D:\Tomasz_Szewa\PU_TomaszSzewa\SCILAB"
+
+--> help diary
+
+--> diary('Pierwsze' ,'close')
+ ans  =
+
+   1.
+
+--> a + 5
+ ans  =
+
+   10.
+
+--> clear a
+
+--> a = 3
+ a  = 
+
+   3.
+
+--> b = 4
+ b  = 
+
+   4.
+
+--> a + b
+ ans  =
+
+   7.
+
+--> a - b
+ ans  =
+
+  -1.
+
+--> a \ b
+ ans  =
+
+   1.3333333
+
+--> a / b
+ ans  =
+
+   0.75
+
+--> a * b
+ ans  =
+
+   12.
+
+--> a^b
+ ans  =
+
+   81.
+
+--> a:b
+ ans  =
+
+   3.   4.
+
+--> // cośtam
+
+--> ;
+
+--> c = 5
+ c  = 
+
+   5.
+
+--> c = 7; 
+
+--> c
+ c  = 
+
+   7.
+
+--> 2 : .5 : 4
+ ans  =
+
+   2.   2.5   3.   3.5   4.
+
+--> d = 2 : .5 : 4
+ d  = 
+
+   2.   2.5   3.   3.5   4.
+
+--> linspace(2,3,11)
+ ans  =
+
+         column 1 to 8
+
+   2.   2.1   2.2   2.3   2.4   2.5   2.6   2.7
+
+         column 9 to 11
+
+   2.8   2.9   3.
+
+--> U = [2,9,-4]
+ U  = 
+
+   2.   9.  -4.
+
+--> A = [3,4;2,7]
+ A  = 
+
+   3.   4.
+   2.   7.
+
+--> comp = 3+%i
+ comp  = 
+
+   3. + i  
+
+--> x = poly(0,'x')
+ x  = 
+
+  x
+
+--> %pi
+ %pi  = 
+
+   3.1415927
+
+--> %e
+ %e  = 
+
+   2.7182818
+
+--> %i
+ %i  = 
+
+   0. + i  
+
+--> %inf
+ %inf  = 
+
+   Inf
+
+--> %eps
+ %eps  = 
+
+   2.220D-16
+
+--> X = [2,5,6,7,8,10]
+ X  = 
+
+   2.   5.   6.   7.   8.   10.
+
+--> X(5)
+ ans  =
+
+   8.
+
+--> X($)
+ ans  =
+
+   10.
+
+--> X($-1)
+ ans  =
+
+   8.
+
+--> A(1,2)
+ ans  =
+
+   4.
+
+--> A(:,2)
+ ans  =
+
+   4.
+   7.
+
+--> A(1,:)
+ ans  =
+
+   3.   4.
+
+--> A(:,$)
+ ans  =
+
+   4.
+   7.
+
+--> A($-1,:)
+ ans  =
+
+   3.   4.
+
+--> A = [2,3,4;3,5,8;6,9,10]
+ A  = 
+
+   2.   3.   4. 
+   3.   5.   8. 
+   6.   9.   10.
+
+--> A(2:3,1:2)
+ ans  =
+
+   3.   5.
+   6.   9.
+
+--> C = A(2:3,1:2)
+ C  = 
+
+   3.   5.
+   6.   9.
+
+--> B = [2,4;6,7]
+ B  = 
+
+   2.   4.
+   6.   7.
+
+--> C * B
+ ans  =
+
+   36.   47.
+   66.   87.
+
+--> A / B
+
+Inconsistent row/column dimensions.
+
+--> B / A
+
+Inconsistent row/column dimensions.
+
+--> A / C
+
+Inconsistent row/column dimensions.
+
+--> C / A
+
+Inconsistent row/column dimensions.
+
+--> N = [1,2,3]
+ N  = 
+
+   1.   2.   3.
+
+--> M = [4,5,6]
+ M  = 
+
+   4.   5.   6.
+
+--> N / M
+ ans  =
+
+   0.4155844
+
+--> N \ M
+ ans  =
+
+   0.          0.          0.
+   0.          0.          0.
+   1.3333333   1.6666667   2.
+
+--> 5!
+5!
+^~^
+Error: syntax error, unexpected identifier, expecting end of file
+
+--> p = 5
+ p  = 
+
+   5.
+
+--> p!
+
+Undefined variable: p!
+
+--> clear p
+
+--> p = 5
+ p  = 
+
+   5.
+
+--> p!
+
+Undefined variable: p!
+
+--> factorial p
+at line    22 of function factorial ( C:\Users\local\AppData\Local\scilab-6.1.1\modules\elementary_functions\macros\factorial.sci line 35 )
+
+factorial: Argument #1: Non-negative integers expected.
+--> p!
+
+Undefined variable: p!
+
+--> factorial(p)
+ ans  =
+
+   120.
+
+--> p !
+
+Invalid index.
+
+--> h = 3
+ h  = 
+
+   3.
+
+--> sin(h)
+ ans  =
+
+   0.1411200
+
+--> cos(h)
+ ans  =
+
+  -0.9899925
+
+--> tan(h)
+ ans  =
+
+  -0.1425465
+
+--> sec(h)
+ ans  =
+
+  -1.0101087
+
+--> csc(h)
+ ans  =
+
+   7.0861674
+
+--> cotg(h)
+ ans  =
+
+  -7.0152526
+
+--> asin(h)
+ ans  =
+
+   1.5707963 - 1.7627472i
+
+--> acos(h)
+ ans  =
+
+   0. + 1.7627472i
+
+--> atan(h)
+ ans  =
+
+   1.2490458
+
+--> asec(h)
+ ans  =
+
+   1.2309594
+
+--> acsc(h)
+ ans  =
+
+   0.3398369
+
+--> acot(h)
+ ans  =
+
+   0.3217506
+
+--> exp(h)
+ ans  =
+
+   20.085537
+
+--> log(h)
+ ans  =
+
+   1.0986123
+
+--> log2(h)
+ ans  =
+
+   1.5849625
+
+--> round 1.125412351235
+in builtin                round 
+
+Function not defined for given argument type(s),
+  check arguments or define function %c_round for overloading.
+
+--> round(1.125412351235)
+ ans  =
+
+   1.
+
+--> floor(h)
+ ans  =
+
+   3.
+
+--> floor(M)
+ ans  =
+
+   4.   5.   6.
+
+--> M
+ M  = 
+
+   4.   5.   6.
+
+--> floor(1.4)
+ ans  =
+
+   1.
+
+--> ceil(1.4)
+ ans  =
+
+   2.
+
+--> int(1.45)
+ ans  =
+
+   1.
+
+--> modulo(4,5)
+ ans  =
+
+   4.
+
+--> factorial(10)
+ ans  =
+
+   3628800.
+
+--> factor(4)
+ ans  =
+
+   2.   2.
+
+--> factor(123)
+ ans  =
+
+   3.   41.
+
+--> sqrt(5)
+ ans  =
+
+   2.2360680
+
+--> abs(-5)
+ ans  =
+
+   5.
+
+--> clear a
+
+--> disp(x)
+
+  x
+
+--> disp(X)
+
+   2.   5.   6.   7.   8.   10.
+
+--> disp("asfasdfa")
+
+  "asfasdfa"
+
+--> find(M<3)
+ ans  =
+
+    []
+
+--> find(N<3)
+ ans  =
+
+   1.   2.
+
+--> clean(x)
+ ans  =
+
+  x
+
+--> disp(x)
+
+  x
+
+--> format('v', 20)
+
+--> format('e',20)
+
+--> help("plot")
+
+--> x = format('v', 20)
+
+format: Nieprawidłowa liczba argumentów wyjściowych: oczekiwano 0.
+
+--> x = format(2, 20)
+
+format: Nieprawidłowa wartość argumentu wejściowego nr 2.
+
+--> apropos format
+
+--> format('v', 20)
+
+--> i = 5
+ i  = 
+
+   5.
+
+--> o = 10
+ o  = 
+
+   10.
+
+--> i < o
+ ans  =
+
+  T
+
+--> o < i
+ ans  =
+
+  F
+
+--> 0 > i
+ ans  =
+
+  F
+
+--> i <= 0
+ ans  =
+
+  F
+
+--> o <= i
+ ans  =
+
+  F
+
+--> i >= 0
+ ans  =
+
+  T
+
+--> i <> o
+ ans  =
+
+  T
+
+--> i == o
+ ans  =
+
+  F
+
+--> 
+
