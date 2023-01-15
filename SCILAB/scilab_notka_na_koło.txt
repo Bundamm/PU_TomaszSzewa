@@ -1,0 +1,201 @@
+PAMIĘTAJ ŻEBY PRZY MNOŻENIU ZAWSZE DAWAĆ GWIAZDKĘ NIE 8b tylko 8*b
+PRZY CIĄGACH PAMIĘTAJ O KROPCE PRZY KAŻDEJ OPERACJI BO INACZEJ SIĘ NIE POLICZY 
+
+Przydatne funkcje:
+log2(x) -> logarytm z podstawą 2
+log10(x) -> logarytm z podstawą 10
+log(x) -> logarytm naturalny
+log2(x)/log2(y) -> logarytm z x z podstawą y
+sqrt(x) -> pierwiastek kwadratowy
+nthroot(zczego,stopienpierw) -> pierwiastek z określonym stopniem
+sin(x) asin(x)
+cos(x) acos(x)
+tan(x) atan(x)
+cot(x) acot(x)
+%pi -> to po prostu pi
+%e daje ci po prostu śmieszne e lol
+factorial(x) silnia z x = x!
+
+a = [2 3 3 4] 
+b = [2,3,3,4]
+a == b to to samo
+a + b = [4 6 6 8]
+a - b = [0 0 0 0]
+2*a = [4 6 6 8]
+a + 3 = [5 6 6 7]
+a**3 = [ 8 27 27 64]
+3**a = [9 27 27 81] bo 3^2 itd
+a.*b = [4 9 9 16] mnoży wszystkie elementy a przez wszystkie elementy b nie można dać bez kropki
+c=[a,b] = [2 3 3 4 2 3 3 4]
+d=[a;b] = [2 3 3 4] udawajmy że to macierz xD
+	  [2 3 3 4]
+a = [1,3,5]
+b = [3,6,7]
+a(2) = 3 zwraca drugi element
+a' = 1 zamieniło w 3 wierszową macierz
+     3 
+     5
+
+sum(a) = 9 sumuje wszystko w tablicy/macierzy
+prod(a) = 15 mnoży wszystko w tablicy/macierzy
+max(a) = 5 zwraca maksymalny
+min(a) = 1 zwraca minimalny
+length(a) = 3 zwraca długość tablicy/macierzy
+
+
+e=[0:1:5] zwraca ciąg od zera do 5 z przejściem co 1
+g=[0:3:10] przechodzi co 3 pomija 10 bo nie może dodać 3
+h=0:2:8 robi to samo nie potrzebuje                                                                                                                          
+m=2:.1:3 przechodzi o 0.1 do 3
+n=4:9 przechodzi defaultowo co 1 od 4 do 9
+o=linspace(1,3,5) = 1 1.5 2 2.5 3 przechodzi od 1 do 3 w podanej ilości kroków wymiar liniowy? i guess
+
+sum(a.*b) = 56 mnoży elementy a przez elementy b a potem je sumuje
+
+
+
+Macierze:
+a=[1 2;3 4]
+b=[1,1;1,1] 
+i wszystko to co wyżej bo działa to tak samo
+a(1,2) zwróci z pierwszego wiersza element drugiej kolumny
+a(2,1) analogicznie
+a(2,2)=5 zamieni w drugim wierszu element drugiej kolumny na 5
+a(:,:) zwraca wszystkie wiersze i wszystkie kolumny
+a(:,2) zwraca wszystkie elementy 2 kolumny
+a(2,:) zwraca wszystkie elementy 2 wiersza
+a(1,:)=[0,0] zamienia 2 elementy pierwszego wiersza na 0 od lewej
+nie można podać w kwadratowych mniej niż długość wiersza/kolumny
+[b;[0,0]] dokłada dodatkowy wiersz składający się z 0
+[b,[0;0]] dokłada dodatkową kolumny
+z=b działa jak każde inne przypisanie
+b(1,:)=b(1,:)+2 dodaje każdemu elementowi pierwszego wiersza 2
+b=ones(1,3) zamienia macierz b na jednowymiarową macierz składającą się z jedynek
+b=0*b po prostu mnoży wszystko razy 0
+i=eye(2,2) tworzy macierz jednostkową
+inv(a) tworzy macierz odwrotną
+a*inv(a) też tworzy macierz jednostkową
+
+
+Przykładowe zadania z ciągów i sum co robiliśmy
+n=[1:100]
+1./n
+
+1./n^2
+
+(1+1./n).^n
+
+(n^3-2*n^2+4)./(2*n^3+n^2+10*n+14)
+
+Sumy:
+i = 1:20
+
+sum(1./factorial(i))
+
+i = 1:40
+
+sum((-1).^i./factorial(2*i+1))
+
+i = 1:1000
+
+sum(1./i.^2)
+
+i = 1:50
+
+sum(i.^2./2.^i) = 6
+
+
+Przykładowe logarytmy
+
+log2(32)
+log2(1/81)/log2(3) -> logarytm z podstawą 3 do 1/81
+log2(8)/log2(4) -> logarytm z podstawą 4 do 8
+
+Logarytm z pierwiastkami
+log2(sqrt(2*sqrt(8*sqrt(20))))/log2(3)
+
+log2(7)/log2(nthroot(5,3)) * log2(125)/log2(sqrt(7))
+
+Logarytm w potędze
+
+10^(-log10(8))
+
+Obliczenia takie se tam
+(4^(-1/4)+(1/(2^(-3/2)))^(-4/3)) * (4^(-1/4) + (2*sqrt(2))^(-4/3))
+
+(3*2^(2/3)-2/3*(2^(5/3)-2^(-1/3)))/16^(5/3)
+
+Zamiana stopni na radiany
+
+105 stopni na radiany = 105 * (%pi/180)
+
+710 stopni na radiany = 710 * (%pi/180)
+
+Zamiana radianów na stopnie
+
+7*%pi/12 * 180/%pi zamienia na 105 stopni
+
+31*%pi/18 * 180/%pi zamienia na 310 stopni
+
+Sinusy cosinusy itd
+
+asin(-sqrt(3)/2)
+
+sin(atan(sqrt(3) + acos(-1/2))
+
+asin(sin(2*%pi/3))
+
+cos(2*atan(-1)+3*asin(sqrt(2)/2))
+
+Rysowanie funkcji:
+PAMIĘTAJ O ŚREDNIKU MIĘDZY POLECENIAMI
+
+x = [0:0.01:2*%pi]; tworzy x funkcji sinusowej od 0 do 2 pi
+y = sin(x); tworzy funkcję sinusową z użyciem x
+plot(x,y) rysuje funkcję tutaj nie dałem średnika bo to koniec serii komend
+
+x = [0:0.01:2*%pi];
+y = sin(x);
+z = cos(x);
+plot(x,y,'y','LineWidth',3) rysuje funkcję w kolorze czerwonym przez r i o grubości linii 3 
+
+x = [0:0.01:2*%pi];
+y = sin(x);
+z = cos(x);
+plot(x,y,'LineWidth',3);
+plot(x,z,'r','LineWidth',3);
+xgrid;   Dodaje siatkę
+xlabel('x'); Dodaje opis x-ów jako x możemy oczywiście nazwać je inaczej
+ylabel('sin(x),cos(x)'); Dodaje opis y jako to co ustawimy
+title('Plot of sin(x) and cos(x)'); Tworzy tytuł rysunku
+legend('sin(x)', 'cos(x)',3) tworzy legendę do funkcji numer oznacza pozycję w której ma być legenda
+
+x = [0:0.01:10];
+y = %e^(3*x);
+xgrid;
+xlabel('x');
+ylabel('e^(3*x)');
+title('Plot of f(x) = e^3x');
+plot(x,y, 'g','LineWidth', 2);
+legend('e^3x', 2)
+
+
+x = [0:0.01:10];
+y = log2(2*x+4)/log2(5);
+xgrid;
+xlabel('x');
+ylabel('log_5(2x+4)');
+title('Plot of f(x) = log_5(2x+4)');
+plot(x,y, 'g','LineWidth', 4);
+legend('f(x) = log_5(2x+4)', 2)
+
+DAWAJ LEGENDĘ NA KOŃCU BO INACZEJ SIĘ WYPIERNICZA XD
+
+x = [0:0.01:10];
+y = log10(x^3);
+xgrid;
+xlabel('x');
+ylabel('x^3');
+title('Plot of f(x) = x^3');
+plot(x,y, 'g','LineWidth', 4);
+legend('f(x) = x^3', 2)
